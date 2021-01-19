@@ -1,5 +1,5 @@
-A "Hello, World!" is an introductory computer program.<br>
-:package: [Package](https://package.elm-lang.org/packages/elmw/hello-world/latest/).
+Boolean data type has two possible truth values to represent logic.<br>
+:package: [Package](https://package.elm-lang.org/packages/elmw/extra-boolean/latest/).
 
 <br>
 
@@ -37,7 +37,7 @@ import Main exposing (..)
 | ------ | -------------------------------------------------- |
 | [main] | Start application with model, update & view (MVC). |
 
-[main]: https://package.elm-lang.org/packages/elmw/hello-world/latest/Main#main
+[main]: https://package.elm-lang.org/packages/elmw/extra-boolean/latest/Main#main
 
 <br>
 <br>
