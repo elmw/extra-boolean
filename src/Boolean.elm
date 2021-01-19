@@ -2,7 +2,7 @@ module Boolean exposing (parse, xor, eqv, imp)
 {-|
 Boolean data type has two possible truth values to represent logic.
 
-@docs xor, eqv, imp, parse
+@docs parse, xor, eqv, imp
 -}
 
 import Regex exposing (Regex, fromStringWith, contains, find)

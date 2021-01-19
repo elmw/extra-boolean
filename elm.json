@@ -3,7 +3,7 @@
     "name": "elmw/extra-boolean",
     "summary": "Boolean data type has two possible truth values to represent logic.",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "Boolean"
     ],
