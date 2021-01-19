@@ -1,30 +1,31 @@
 Boolean data type has two possible truth values to represent logic.<br>
-:package: [Package](https://package.elm-lang.org/packages/elmw/extra-boolean/latest/).
-
-<br>
-
-Consider this as a template to:
-- Write elm project.
-- Create test cases.
-- Set up [package information](elm.json).
-- Auto publish package.
-- TODO: Auto update package version.
+:package: [Package](https://package.elm-lang.org/packages/elmw/extra-boolean/latest/),
+:blue_book: [Wiki](https://github.com/elmw/extra-boolean/wiki).
 
 > Stability: Experimental.
 
 <br>
 
 ```elm
-import Main exposing (..)
+import Boolean exposing (..)
 
-4 + 3
--- 7
+parse "inactive"
+-- False
 
-19 + 48
--- 67
+parse "not off"
+-- True
 
-831 + 111
--- 942
+parse "truthy"
+-- True
+
+xor True True
+-- False
+
+imp True False
+-- False
+
+eqv False False
+-- True
 ```
 
 <br>
@@ -33,24 +34,19 @@ import Main exposing (..)
 
 ## Index
 
-| Method | Action                                             |
-| ------ | -------------------------------------------------- |
-| [main] | Start application with model, update & view (MVC). |
+| Method  | Action                                    |
+| ------- | ----------------------------------------- |
+| [parse] | Convert string to boolean.                |
+| [xor]   | Get exclusive-or of 2 boolean values.     |
+| [eqv]   | Check if antecedent ⇔ consequent (x ⇔ y). |
+| [imp]   | Check if antecedent ⇒ consequent (x ⇒ y). |
 
-[main]: https://package.elm-lang.org/packages/elmw/extra-boolean/latest/Main#main
-
-<br>
-<br>
-
-
-## References
-
-- [An Introduction to Elm](https://guide.elm-lang.org)
-- [Text Fields](https://guide.elm-lang.org/architecture/text_fields.html)
-- [Documentation Format](https://package.elm-lang.org/help/documentation-format)
-- [The basic steps to publish a package with Elm 0.19](https://korban.net/posts/elm/2018-10-02-basic-steps-publish-package-elm-19/)
+[parse]: https://github.com/elmw/extra-boolean/wiki/parse
+[xor]: https://github.com/elmw/extra-boolean/wiki/xor
+[eqv]: https://github.com/elmw/extra-boolean/wiki/eqv
+[imp]: https://github.com/elmw/extra-boolean/wiki/imp
 
 <br>
 <br>
 
-[![](https://img.youtube.com/vi/9WkZT0YMZ70/maxresdefault.jpg)](https://www.youtube.com/watch?v=9WkZT0YMZ70)
+[![](https://img.youtube.com/vi/Pfs6SChEXmc/maxresdefault.jpg)](https://www.youtube.com/watch?v=Pfs6SChEXmc)
