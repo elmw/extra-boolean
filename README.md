@@ -34,17 +34,33 @@ eqv False False
 
 ## Index
 
-| Method  | Action                                    |
-| ------- | ----------------------------------------- |
-| [parse] | Convert string to boolean.                |
-| [xor]   | Get exclusive-or of 2 boolean values.     |
-| [eqv]   | Check if antecedent ⇔ consequent (x ⇔ y). |
-| [imp]   | Check if antecedent ⇒ consequent (x ⇒ y). |
+| Method   | Action                                |
+| -------- | ------------------------------------- |
+| [parse]  | Convert string to boolean.            |
+| [not]    | Check if value is false.              |
+| [and]    | Check if all values are true.         |
+| [or]     | Check if any value is true.           |
+| [xor]    | Check if odd no. of values are true.  |
+| [nand]   | Check if any value is false.          |
+| [nor]    | Check if all values are false.        |
+| [xnor]   | Check if even no. of values are true. |
+| [eq]     | Check if antecedent ⇔ consequent.     |
+| [imply]  | Check if antecedent ⇒ consequent.     |
+| [nimply] | Check if antecedent ⇏ consequent.     |
+| [count]  | Count no. of true values.             |
 
 [parse]: https://github.com/elmw/extra-boolean/wiki/parse
+[not]: https://github.com/elmw/extra-boolean/wiki/not
+[and]: https://github.com/elmw/extra-boolean/wiki/and
+[or]: https://github.com/elmw/extra-boolean/wiki/or
 [xor]: https://github.com/elmw/extra-boolean/wiki/xor
-[eqv]: https://github.com/elmw/extra-boolean/wiki/eqv
-[imp]: https://github.com/elmw/extra-boolean/wiki/imp
+[nand]: https://github.com/elmw/extra-boolean/wiki/nand
+[nor]: https://github.com/elmw/extra-boolean/wiki/nor
+[xnor]: https://github.com/elmw/extra-boolean/wiki/xnor
+[eq]: https://github.com/elmw/extra-boolean/wiki/eq
+[imply]: https://github.com/elmw/extra-boolean/wiki/imply
+[nimply]: https://github.com/elmw/extra-boolean/wiki/nimply
+[count]: https://github.com/elmw/extra-boolean/wiki/count
 
 <br>
 <br>
