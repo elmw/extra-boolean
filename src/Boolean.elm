@@ -111,7 +111,7 @@ Check if antecedent ⇏ consequent (a ⇏ b).
     nimply False False == False
 -}
 nimply: Bool -> Bool -> Bool
-nimply = not imply
+nimply = not >> imply
 
 
 
@@ -839,7 +839,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand1: Bool -> Bool
-nand1 = not and1
+nand1 = not >> and1
 
 
 {-|
@@ -854,7 +854,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand2: Bool -> Bool -> Bool
-nand2 = not and2
+nand2 = not >> and2
 
 
 {-|
@@ -869,7 +869,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand3: Bool -> Bool -> Bool -> Bool
-nand3 = not and3
+nand3 = not >> and3
 
 
 {-|
@@ -884,7 +884,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand4: Bool -> Bool -> Bool -> Bool -> Bool
-nand4 = not and4
+nand4 = not >> and4
 
 
 {-|
@@ -899,7 +899,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand5: Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nand5 = not and5
+nand5 = not >> and5
 
 
 {-|
@@ -914,7 +914,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand6: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nand6 = not and6
+nand6 = not >> and6
 
 
 {-|
@@ -929,7 +929,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand7: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nand7 = not and7
+nand7 = not >> and7
 
 
 {-|
@@ -944,7 +944,7 @@ Check if any value is false.
     nand True True   == False
 -}
 nand8: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nand8 = not and8
+nand8 = not >> and8
 
 
 
@@ -992,7 +992,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor1: Bool -> Bool
-nor1 = not or1
+nor1 = not >> or1
 
 
 {-|
@@ -1007,7 +1007,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor2: Bool -> Bool -> Bool
-nor2 = not or2
+nor2 = not >> or2
 
 
 {-|
@@ -1022,7 +1022,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor3: Bool -> Bool -> Bool -> Bool
-nor3 = not or3
+nor3 = not >> or3
 
 
 {-|
@@ -1037,7 +1037,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor4: Bool -> Bool -> Bool -> Bool -> Bool
-nor4 = not or4
+nor4 = not >> or4
 
 
 {-|
@@ -1052,7 +1052,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor5: Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nor5 = not or5
+nor5 = not >> or5
 
 
 {-|
@@ -1067,7 +1067,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor6: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nor6 = not or6
+nor6 = not >> or6
 
 
 {-|
@@ -1082,7 +1082,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor7: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nor7 = not or7
+nor7 = not >> or7
 
 
 {-|
@@ -1097,7 +1097,7 @@ Check if all values are false.
     nor False True  == False
 -}
 nor8: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-nor8 = not or8
+nor8 = not >> or8
 
 
 
@@ -1145,7 +1145,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor1: Bool -> Bool
-xnor1 = not xor1
+xnor1 = not >> xor1
 
 
 {-|
@@ -1160,7 +1160,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor2: Bool -> Bool -> Bool
-xnor2 = not xor2
+xnor2 = not >> xor2
 
 
 {-|
@@ -1175,7 +1175,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor3: Bool -> Bool -> Bool -> Bool
-xnor3 = not xor3
+xnor3 = not >> xor3
 
 
 {-|
@@ -1190,7 +1190,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor4: Bool -> Bool -> Bool -> Bool -> Bool
-xnor4 = not xor4
+xnor4 = not >> xor4
 
 
 {-|
@@ -1205,7 +1205,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor5: Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-xnor5 = not xor5
+xnor5 = not >> xor5
 
 
 {-|
@@ -1220,7 +1220,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor6: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-xnor6 = not xor6
+xnor6 = not >> xor6
 
 
 {-|
@@ -1235,7 +1235,7 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor7: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-xnor7 = not xor7
+xnor7 = not >> xor7
 
 
 {-|
@@ -1250,4 +1250,4 @@ Check if even no. of values are true.
     xnor False True  == False
 -}
 xnor8: Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
-xnor8 = not xor8
+xnor8 = not >> xor8
