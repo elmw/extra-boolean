@@ -18,14 +18,17 @@ parse "not off"
 parse "truthy"
 -- True
 
-xor True True
--- False
-
-imp True False
--- False
-
-eqv False False
+xor3 True True True
 -- True
+
+imply True False
+-- False
+
+eq False False
+-- True
+
+count3 True True False
+-- 2
 ```
 
 <br>
