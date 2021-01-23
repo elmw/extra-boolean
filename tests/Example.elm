@@ -225,9 +225,9 @@ nandTests =
   describe "nand[n] a b ..." [
     test "0.0" <|
       \_ -> nand0 |> equal False,
-    test "1.1" <|
-      \_ -> nand1 False |> equal True,
     test "1.0" <|
+      \_ -> nand1 False |> equal True,
+    test "1.1" <|
       \_ -> nand1 True |> equal False,
     test "2.2" <|
       \_ -> nand2 True False |> equal True,
@@ -252,9 +252,9 @@ norTests =
   describe "nor[n] a b ..." [
     test "0.0" <|
       \_ -> nor0 |> equal True,
-    test "1.1" <|
-      \_ -> nor1 False |> equal True,
     test "1.0" <|
+      \_ -> nor1 False |> equal True,
+    test "1.1" <|
       \_ -> nor1 True |> equal False,
     test "2.0" <|
       \_ -> nor2 False False |> equal True,
@@ -279,9 +279,9 @@ xnorTests =
   describe "xnor[n] a b ..." [
     test "0.0" <|
       \_ -> xnor0 |> equal True,
-    test "1.1" <|
-      \_ -> xnor1 False |> equal True,
     test "1.0" <|
+      \_ -> xnor1 False |> equal True,
+    test "1.1" <|
       \_ -> xnor1 True |> equal False,
     test "2.3" <|
       \_ -> xnor2 True True |> equal True,
