@@ -171,10 +171,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and : Bool -> Bool -> Bool
 and = and2
@@ -187,10 +187,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and0 : Bool
 and0 =
@@ -204,10 +204,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and1 : Bool -> Bool
 and1 a =
@@ -221,10 +221,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and2 : Bool -> Bool -> Bool
 and2 a b =
@@ -238,10 +238,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and3 : Bool -> Bool -> Bool -> Bool
 and3 a b c =
@@ -255,10 +255,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and4 : Bool -> Bool -> Bool -> Bool -> Bool
 and4 a b c d =
@@ -272,10 +272,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and5 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 and5 a b c d e =
@@ -289,10 +289,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 and6 a b c d e f =
@@ -306,10 +306,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 and7 a b c d e f g =
@@ -323,10 +323,10 @@ Check if all values are true.
     -- and[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    and True True   == True
-    and True False  == False
-    and False True  == False
-    and False False == False
+    and True True             == True
+    and True False            == False
+    and4 True True True True  == True
+    and4 True False True True == False
 -}
 and8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 and8 a b c d e f g h =
@@ -343,10 +343,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or : Bool -> Bool -> Bool
 or = and2
@@ -359,10 +359,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or0 : Bool
 or0 =
@@ -376,10 +376,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or1 : Bool -> Bool
 or1 a =
@@ -393,10 +393,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or2 : Bool -> Bool -> Bool
 or2 a b =
@@ -410,10 +410,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or3 : Bool -> Bool -> Bool -> Bool
 or3 a b c =
@@ -427,10 +427,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or4 : Bool -> Bool -> Bool -> Bool -> Bool
 or4 a b c d =
@@ -444,10 +444,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or5 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 or5 a b c d e =
@@ -461,10 +461,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 or6 a b c d e f =
@@ -478,10 +478,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 or7 a b c d e f g =
@@ -495,10 +495,10 @@ Check if any value is true.
     -- or[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    or True True   == True
-    or True False  == True
-    or False True  == True
-    or False False == False
+    or True False               == True
+    or False False              == False
+    or4 False True False True   == True
+    or4 False False False False == False
 -}
 or8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 or8 a b c d e f g h =
@@ -515,10 +515,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor : Bool -> Bool -> Bool
 xor = xor2
@@ -531,10 +531,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor0 : Bool
 xor0 =
@@ -548,10 +548,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor1 : Bool -> Bool
 xor1 a =
@@ -565,10 +565,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor2 : Bool -> Bool -> Bool
 xor2 = Basics.xor
@@ -581,10 +581,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor3 : Bool -> Bool -> Bool -> Bool
 xor3 a b c =
@@ -598,10 +598,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor4 : Bool -> Bool -> Bool -> Bool -> Bool
 xor4 a b c d =
@@ -615,10 +615,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor5 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xor5 a b c d e =
@@ -632,10 +632,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xor6 a b c d e f =
@@ -649,10 +649,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xor7 a b c d e f g =
@@ -666,10 +666,10 @@ Check if odd no. of values are true.
     -- xor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xor True False  == True
-    xor False True  == True
-    xor True True   == False
-    xor False False == False
+    xor True False            == True
+    xor True True             == False
+    xor4 True True True False == True
+    xor4 True True True True  == False
 -}
 xor8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xor8 a b c d e f g h =
@@ -686,10 +686,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count : Bool -> Bool -> Int
 count = count2
@@ -702,10 +702,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count0 : Int
 count0 =
@@ -719,10 +719,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count1 : Bool -> Int
 count1 a =
@@ -736,10 +736,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count2 : Bool -> Bool -> Int
 count2 a b =
@@ -753,10 +753,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count3 : Bool -> Bool -> Bool -> Int
 count3 a b c =
@@ -770,10 +770,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count4 : Bool -> Bool -> Bool -> Bool -> Int
 count4 a b c d =
@@ -787,10 +787,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count5 : Bool -> Bool -> Bool -> Bool -> Bool -> Int
 count5 a b c d e =
@@ -804,10 +804,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Int
 count6 a b c d e f =
@@ -821,10 +821,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Int
 count7 a b c d e f g =
@@ -838,10 +838,10 @@ Count no. of true values.
     -- count[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    count True True   == 2
-    count True False  == 1
-    count False True  == 1
-    count False False == 0
+    count True True               == 2
+    count True False              == 1
+    count4 True True True False   == 3
+    count4 False True False False == 1
 -}
 count8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Int
 count8 a b c d e f g h =
@@ -858,10 +858,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand : Bool -> Bool -> Bool
 nand = nand2
@@ -874,10 +874,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand0 : Bool
 nand0 =
@@ -891,10 +891,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand1 : Bool -> Bool
 nand1 a =
@@ -908,10 +908,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand2 : Bool -> Bool -> Bool
 nand2 a b =
@@ -925,10 +925,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand3 : Bool -> Bool -> Bool -> Bool
 nand3 a b c =
@@ -942,10 +942,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand4 : Bool -> Bool -> Bool -> Bool -> Bool
 nand4 a b c d =
@@ -959,10 +959,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand5 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nand5 a b c d e =
@@ -976,10 +976,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nand6 a b c d e f =
@@ -993,10 +993,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nand7 a b c d e f g =
@@ -1010,10 +1010,10 @@ Check if any value is false.
     -- nand[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nand True False  == True
-    nand False True  == True
-    nand False False == True
-    nand True True   == False
+    nand True False            == True
+    nand True True             == False
+    nand4 True True False True == True
+    nand4 True True True True  == False
 -}
 nand8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nand8 a b c d e f g h =
@@ -1030,10 +1030,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor : Bool -> Bool -> Bool
 nor = nor2
@@ -1046,10 +1046,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor0 : Bool
 nor0 =
@@ -1063,10 +1063,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor1 : Bool -> Bool
 nor1 a =
@@ -1080,10 +1080,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor2 : Bool -> Bool -> Bool
 nor2 a b =
@@ -1097,10 +1097,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor3 : Bool -> Bool -> Bool -> Bool
 nor3 a b c =
@@ -1114,10 +1114,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor4 : Bool -> Bool -> Bool -> Bool -> Bool
 nor4 a b c d =
@@ -1131,10 +1131,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor5 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nor5 a b c d e =
@@ -1148,10 +1148,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nor6 a b c d e f =
@@ -1165,10 +1165,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nor7 a b c d e f g =
@@ -1182,10 +1182,10 @@ Check if all values are false.
     -- nor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    nor False False == True
-    nor True True   == False
-    nor True False  == False
-    nor False True  == False
+    nor False False              == True
+    nor True False               == False
+    nor4 False False False False == True
+    nor4 False False True False  == False
 -}
 nor8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 nor8 a b c d e f g h =
@@ -1202,10 +1202,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor : Bool -> Bool -> Bool
 xnor = xnor2
@@ -1218,10 +1218,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor0 : Bool
 xnor0 =
@@ -1235,10 +1235,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor1 : Bool -> Bool
 xnor1 a =
@@ -1252,10 +1252,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor2 : Bool -> Bool -> Bool
 xnor2 a b =
@@ -1269,10 +1269,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor3 : Bool -> Bool -> Bool -> Bool
 xnor3 a b c =
@@ -1286,10 +1286,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor4 : Bool -> Bool -> Bool -> Bool -> Bool
 xnor4 a b c d =
@@ -1303,10 +1303,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor5 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xnor5 a b c d e =
@@ -1320,10 +1320,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor6 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xnor6 a b c d e f =
@@ -1337,10 +1337,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor7 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xnor7 a b c d e f g =
@@ -1354,10 +1354,10 @@ Check if even no. of values are true.
     -- xnor[n] a b ...
     -- a: 1st boolean
     -- b: 2nd boolean
-    xnor True True   == True
-    xnor False False == True
-    xnor True False  == False
-    xnor False True  == False
+    xnor True True              == True
+    xnor False True             == False
+    xnor4 True True False False == True
+    xnor4 True True True False  == False
 -}
 xnor8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xnor8 a b c d e f g h =
@@ -1375,8 +1375,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select : Int -> Bool -> Bool -> Bool
 select = select2
@@ -1390,8 +1392,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select0 : Int -> Bool
 select0 _ =
@@ -1406,8 +1410,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select1 : Int -> Bool -> Bool
 select1 i a =
@@ -1424,8 +1430,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select2 : Int -> Bool -> Bool -> Bool
 select2 i a b =
@@ -1443,8 +1451,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select3 : Int -> Bool -> Bool -> Bool -> Bool
 select3 i a b c =
@@ -1463,8 +1473,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select4 : Int -> Bool -> Bool -> Bool -> Bool -> Bool
 select4 i a b c d =
@@ -1484,8 +1496,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select5 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 select5 i a b c d e =
@@ -1506,8 +1520,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select6 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 select6 i a b c d e f =
@@ -1529,8 +1545,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select7 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 select7 i a b c d e f g =
@@ -1553,8 +1571,10 @@ Check if ith value is true.
     -- i: index
     -- a: 1st boolean
     -- b: 2nd boolean
-    select 0 True False == True
-    select 1 True False == False
+    select 0 True False             == True
+    select 1 True False             == False
+    select4 1 True True False False == True
+    select4 2 True True False False == False
 -}
 select8 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 select8 i a b c d e f g h =
