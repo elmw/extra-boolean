@@ -12,14 +12,18 @@ import Boolean exposing (..)
 parseTests : Test
 parseTests =
   describe "parse s" [
-    test "1.0" <|
-      \_ -> parse "not true" |> equal False,
-    test "1.1" <|
-      \_ -> parse "inactive" |> equal False,
-    test "1.2" <|
+    test "1.t0" <|
+      \_ -> parse "truthy" |> equal True,
+    test "1.t1" <|
       \_ -> parse "not off" |> equal True,
-    test "1.3" <|
-      \_ -> parse "truthy" |> equal True
+    test "1.t2" <|
+      \_ -> parse "enabled" |> equal True,
+    test "1.f0" <|
+      \_ -> parse "not true" |> equal False,
+    test "1.f1" <|
+      \_ -> parse "inactive" |> equal False,
+    test "1.f2" <|
+      \_ -> parse "disabled" |> equal False
   ]
 
 
