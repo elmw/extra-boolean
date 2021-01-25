@@ -44,6 +44,7 @@ Convert string to boolean.
     parse "not off"  == True
     parse "not true" == False
     parse "inactive" == False
+    parse "disabled" == False
 -}
 parse : String -> Bool
 parse s =
@@ -64,7 +65,7 @@ Check if value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/not)
 
     -- not a
-    -- a: a boolean value
+    -- a: 1st boolean
     not False == True
     not True  == False
 -}
@@ -165,8 +166,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -181,8 +182,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -198,8 +199,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -215,8 +216,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -232,8 +233,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -249,8 +250,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -266,8 +267,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -283,8 +284,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -300,8 +301,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -317,8 +318,8 @@ Check if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     and True True   == True
     and True False  == False
     and False True  == False
@@ -337,8 +338,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -353,8 +354,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -370,8 +371,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -387,8 +388,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -404,8 +405,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -421,8 +422,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -438,8 +439,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -455,8 +456,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -472,8 +473,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -489,8 +490,8 @@ Check if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     or True True   == True
     or True False  == True
     or False True  == True
@@ -509,8 +510,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -525,8 +526,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -542,8 +543,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -559,8 +560,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -575,8 +576,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -592,8 +593,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -609,8 +610,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -626,8 +627,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -643,8 +644,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -660,8 +661,8 @@ Check if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xor True False  == True
     xor False True  == True
     xor True True   == False
@@ -680,8 +681,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -696,8 +697,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -713,8 +714,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -730,8 +731,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -747,8 +748,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -764,8 +765,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -781,8 +782,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -798,8 +799,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -815,8 +816,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -832,8 +833,8 @@ Count no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     count True True   == 2
     count True False  == 1
     count False True  == 1
@@ -852,8 +853,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -868,8 +869,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -885,8 +886,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -902,8 +903,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -919,8 +920,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -936,8 +937,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -953,8 +954,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -970,8 +971,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -987,8 +988,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -1004,8 +1005,8 @@ Check if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nand True False  == True
     nand False True  == True
     nand False False == True
@@ -1024,8 +1025,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1040,8 +1041,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1057,8 +1058,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1074,8 +1075,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1091,8 +1092,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1108,8 +1109,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1125,8 +1126,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1142,8 +1143,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1159,8 +1160,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1176,8 +1177,8 @@ Check if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     nor False False == True
     nor True True   == False
     nor True False  == False
@@ -1196,8 +1197,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1212,8 +1213,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1229,8 +1230,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1246,8 +1247,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1263,8 +1264,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1280,8 +1281,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1297,8 +1298,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1314,8 +1315,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1331,8 +1332,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
@@ -1348,8 +1349,8 @@ Check if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
-    -- a: a boolean value
-    -- b: another boolean value
+    -- a: 1st boolean
+    -- b: 2nd boolean
     xnor True True   == True
     xnor False False == True
     xnor True False  == False
