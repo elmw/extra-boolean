@@ -9,17 +9,15 @@ Boolean data type has two possible truth values to represent logic.<br>
 ```elm
 import Boolean exposing (..)
 
-parse "inactive"
--- False
-
+parse "1"
+parse "truthy"
 parse "not off"
 -- True
 
-parse "truthy"
--- True
-
-xor3 True True True
--- True
+parse "not true"
+parse "inactive"
+parse "disabled"
+-- False
 
 imply True False
 -- False
@@ -27,8 +25,14 @@ imply True False
 eq False False
 -- True
 
+xor3 True True True
+-- True
+
+select3 1 True False True
+-- False         ^
+
 count3 True True False
--- 2
+-- 2    ^    ^
 ```
 
 <br>
@@ -50,6 +54,7 @@ count3 True True False
 | [eq]     | Check if antecedent ⇔ consequent.     |
 | [imply]  | Check if antecedent ⇒ consequent.     |
 | [nimply] | Check if antecedent ⇏ consequent.     |
+| [select] | Check if ith value is true.           |
 | [count]  | Count no. of true values.             |
 
 [parse]: https://github.com/elmw/extra-boolean/wiki/parse
@@ -63,6 +68,7 @@ count3 True True False
 [eq]: https://github.com/elmw/extra-boolean/wiki/eq
 [imply]: https://github.com/elmw/extra-boolean/wiki/imply
 [nimply]: https://github.com/elmw/extra-boolean/wiki/nimply
+[select]: https://github.com/elmw/extra-boolean/wiki/select
 [count]: https://github.com/elmw/extra-boolean/wiki/count
 
 <br>
