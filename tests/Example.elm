@@ -13,16 +13,20 @@ parseTests : Test
 parseTests =
   describe "parse s" [
     test "1.t0" <|
-      \_ -> parse "truthy" |> equal True,
+      \_ -> parse "1" |> equal True,
     test "1.t1" <|
-      \_ -> parse "not off" |> equal True,
+      \_ -> parse "truthy" |> equal True,
     test "1.t2" <|
+      \_ -> parse "not off" |> equal True,
+    test "1.t3" <|
       \_ -> parse "enabled" |> equal True,
     test "1.f0" <|
-      \_ -> parse "not true" |> equal False,
+      \_ -> parse "0" |> equal False,
     test "1.f1" <|
-      \_ -> parse "inactive" |> equal False,
+      \_ -> parse "not true" |> equal False,
     test "1.f2" <|
+      \_ -> parse "inactive" |> equal False,
+    test "1.f3" <|
       \_ -> parse "disabled" |> equal False
   ]
 
@@ -299,4 +303,27 @@ xnorTests =
       \_ -> xnor8 False False False False False False False False |> equal True,
     test "8.7" <|
       \_ -> xnor8 False False False False False True True True |> equal False
+  ]
+
+
+
+
+-- SELECT (VARIABLE)
+selectTests : Test
+selectTests =
+  describe "select[n] i a b ..." [
+    test "0.0" <|
+      \_ -> select0 0 |> equal False,
+    test "1.0" <|
+      \_ -> select1 0 True |> equal True,
+    test "1.1" <|
+      \_ -> select1 1 True |> equal False,
+    test "2.0" <|
+      \_ -> select2 0 True False |> equal True,
+    test "2.1" <|
+      \_ -> select2 1 True False |> equal False,
+    test "8.0" <|
+      \_ -> select8 0 True False False False False False False False |> equal True,
+    test "8.7" <|
+      \_ -> select8 7 True False False False False False False False |> equal False
   ]

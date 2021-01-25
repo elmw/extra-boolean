@@ -8,7 +8,8 @@ module Boolean exposing (
     count, count0, count1, count2, count3, count4, count5, count6, count7, count8,
     nand, nand0, nand1, nand2, nand3, nand4, nand5, nand6, nand7, nand8,
     nor, nor0, nor1, nor2, nor3, nor4, nor5, nor6, nor7, nor8,
-    xnor, xnor0, xnor1, xnor2, xnor3, xnor4, xnor5, xnor6, xnor7, xnor8
+    xnor, xnor0, xnor1, xnor2, xnor3, xnor4, xnor5, xnor6, xnor7, xnor8,
+    select, select0, select1, select2, select3, select4, select5, select6, select7, select8
   )
 {-|
 Boolean data type has two possible truth values to represent logic.\
@@ -25,6 +26,7 @@ Boolean data type has two possible truth values to represent logic.\
 @docs nand, nand0, nand1, nand2, nand3, nand4, nand5, nand6, nand7, nand8
 @docs nor, nor0, nor1, nor2, nor3, nor4, nor5, nor6, nor7, nor8
 @docs xnor, xnor0, xnor1, xnor2, xnor3, xnor4, xnor5, xnor6, xnor7, xnor8
+@docs select, select0, select1, select2, select3, select4, select5, select6, select7, select8
 -}
 
 import Regex exposing (Regex, fromStringWith, contains, find)
@@ -40,6 +42,7 @@ Convert string to boolean.
 
     -- parse s
     -- s: a string
+    parse "1"        == True
     parse "truthy"   == True
     parse "not off"  == True
     parse "not true" == False
@@ -65,7 +68,7 @@ Check if value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/not)
 
     -- not a
-    -- a: 1st boolean
+    -- a: a boolean
     not False == True
     not True  == False
 -}
@@ -1359,3 +1362,209 @@ Check if even no. of values are true.
 xnor8 : Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
 xnor8 a b c d e f g h =
   not <| xor8 a b c d e f g h
+
+
+
+
+-- SELECT (VARIABLE)
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select : Int -> Bool -> Bool -> Bool
+select = select2
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select0 : Int -> Bool
+select0 _ =
+  False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select1 : Int -> Bool -> Bool
+select1 i a =
+  case i of
+    0 -> a
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select2 : Int -> Bool -> Bool -> Bool
+select2 i a b =
+  case i of
+    0 -> a
+    1 -> b
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select3 : Int -> Bool -> Bool -> Bool -> Bool
+select3 i a b c =
+  case i of
+    0 -> a
+    1 -> b
+    2 -> c
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select4 : Int -> Bool -> Bool -> Bool -> Bool -> Bool
+select4 i a b c d =
+  case i of
+    0 -> a
+    1 -> b
+    2 -> c
+    3 -> d
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select5 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
+select5 i a b c d e =
+  case i of
+    0 -> a
+    1 -> b
+    2 -> c
+    3 -> d
+    4 -> e
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select6 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
+select6 i a b c d e f =
+  case i of
+    0 -> a
+    1 -> b
+    2 -> c
+    3 -> d
+    4 -> e
+    5 -> f
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select7 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
+select7 i a b c d e f g =
+  case i of
+    0 -> a
+    1 -> b
+    2 -> c
+    3 -> d
+    4 -> e
+    5 -> f
+    6 -> g
+    _ -> False
+
+
+{-|
+Check if ith value is true.
+[📘](https://github.com/elmw/extra-boolean/wiki/select)
+
+    -- select[n] i a b ...
+    -- i: index
+    -- a: 1st boolean
+    -- b: 2nd boolean
+    select 0 True False == True
+    select 1 True False == False
+-}
+select8 : Int -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool -> Bool
+select8 i a b c d e f g h =
+  case i of
+    0 -> a
+    1 -> b
+    2 -> c
+    3 -> d
+    4 -> e
+    5 -> f
+    6 -> g
+    7 -> h
+    _ -> False
