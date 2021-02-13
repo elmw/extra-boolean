@@ -58,6 +58,20 @@ eqTests =
   ]
 
 
+neqTests : Test
+neqTests =
+  describe "neq a b" [
+    test "2.2" <|
+      \_ -> neq True False |> equal True,
+    test "2.1" <|
+      \_ -> neq False True |> equal True,
+    test "2.3" <|
+      \_ -> neq True True |> equal False,
+    test "2.0" <|
+      \_ -> neq False False |> equal False
+  ]
+
+
 implyTests : Test
 implyTests =
   describe "imply a b" [

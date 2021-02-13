@@ -1,6 +1,6 @@
 module Boolean exposing (
     parse,
-    not, eq, imply, nimply,
+    not, eq, neq, imply, nimply,
     eqv, imp,
     and, and0, and1, and2, and3, and4, and5, and6, and7, and8,
     or, or0, or1, or2, or3, or4, or5, or6, or7, or8,
@@ -17,7 +17,7 @@ Boolean data type has two possible truth values to represent logic.\
 📘 [Wiki](https://github.com/elmw/extra-boolean/wiki).
 
 @docs parse
-@docs not, eq, imply, nimply
+@docs not, eq, neq, imply, nimply
 @docs eqv, imp
 @docs and, and0, and1, and2, and3, and4, and5, and6, and7, and8
 @docs or, or0, or1, or2, or3, or4, or5, or6, or7, or8
@@ -62,7 +62,7 @@ regex s =
 
 
 
--- NOT, EQ, IMPLY, NIMPLY (FIXED)
+-- NOT, EQ, NEQ, IMPLY, NIMPLY (FIXED)
 {-|
 Check if value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/not)
@@ -90,6 +90,23 @@ Check if antecedent ⇔ consequent (a ⇔ b).
 -}
 eq : Bool -> Bool -> Bool
 eq = xnor2
+
+
+{-|
+Check if antecedent ⇎ consequent (a ⇎ b).
+[📘](https://github.com/elmw/extra-boolean/wiki/neq)
+
+    -- neq a b
+    -- a: antecedent
+    -- b: consequent
+    neq True False  == True
+    neq False True  == True
+    neq True True   == False
+    neq False False == False
+-}
+neq : Bool -> Bool -> Bool
+neq a b =
+  not <| eq a b
 
 
 {-|
