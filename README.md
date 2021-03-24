@@ -55,22 +55,22 @@ count3 True True False
 
 ## Index
 
-| Method   | Action                                |
-| -------- | ------------------------------------- |
-| [parse]  | Convert string to boolean.            |
-| [not]    | Check if value is false.              |
-| [and]    | Check if all values are true.         |
-| [or]     | Check if any value is true.           |
-| [xor]    | Check if odd no. of values are true.  |
-| [nand]   | Check if any value is false.          |
-| [nor]    | Check if all values are false.        |
-| [xnor]   | Check if even no. of values are true. |
-| [eq]     | Check if antecedent ⇔ consequent.     |
-| [neq]    | Check if antecedent ⇎ consequent.     |
-| [imply]  | Check if antecedent ⇒ consequent.     |
-| [nimply] | Check if antecedent ⇏ consequent.     |
-| [select] | Check if ith value is true.           |
-| [count]  | Count no. of true values.             |
+| Method   | Action                                 |
+| -------- | -------------------------------------- |
+| [parse]  | Converts string to boolean.            |
+| [not]    | Checks if value is false.              |
+| [and]    | Checks if all values are true.         |
+| [or]     | Checks if any value is true.           |
+| [xor]    | Checks if odd no. of values are true.  |
+| [nand]   | Checks if any value is false.          |
+| [nor]    | Checks if all values are false.        |
+| [xnor]   | Checks if even no. of values are true. |
+| [eq]     | Checks if antecedent ⇔ consequent.     |
+| [neq]    | Checks if antecedent ⇎ consequent.     |
+| [imply]  | Checks if antecedent ⇒ consequent.     |
+| [nimply] | Checks if antecedent ⇏ consequent.     |
+| [select] | Checks if ith value is true.           |
+| [count]  | Counts no. of true values.             |
 
 [boolean]: https://www.npmjs.com/package/boolean
 [parse]: https://github.com/elmw/extra-boolean/wiki/parse

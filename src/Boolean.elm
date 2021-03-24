@@ -37,7 +37,7 @@ import List exposing (length)
 
 -- PARSE
 {-|
-Convert string to boolean.
+Converts string to boolean.
 [📘](https://github.com/elmw/extra-boolean/wiki/parse)
 
     -- parse s
@@ -64,7 +64,7 @@ regex s =
 
 -- NOT, EQ, NEQ, IMPLY, NIMPLY (FIXED)
 {-|
-Check if value is false.
+Checks if value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/not)
 
     -- not a
@@ -77,7 +77,7 @@ not = Basics.not
 
 
 {-|
-Check if antecedent ⇔ consequent (a ⇔ b).
+Checks if antecedent ⇔ consequent (a ⇔ b).
 [📘](https://github.com/elmw/extra-boolean/wiki/eq)
 
     -- eq a b
@@ -93,7 +93,7 @@ eq = xnor2
 
 
 {-|
-Check if antecedent ⇎ consequent (a ⇎ b).
+Checks if antecedent ⇎ consequent (a ⇎ b).
 [📘](https://github.com/elmw/extra-boolean/wiki/neq)
 
     -- neq a b
@@ -110,7 +110,7 @@ neq a b =
 
 
 {-|
-Check if antecedent ⇒ consequent (a ⇒ b).
+Checks if antecedent ⇒ consequent (a ⇒ b).
 [📘](https://github.com/elmw/extra-boolean/wiki/imply)
 
     -- imply a b
@@ -127,7 +127,7 @@ imply a b =
 
 
 {-|
-Check if antecedent ⇏ consequent (a ⇏ b).
+Checks if antecedent ⇏ consequent (a ⇏ b).
 [📘](https://github.com/elmw/extra-boolean/wiki/nimply)
 
     -- nimply a b
@@ -147,7 +147,7 @@ nimply a b =
 
 -- EQV, IMP (SHORTCUTS)
 {-|
-Check if antecedent ⇔ consequent (a ⇔ b).
+Checks if antecedent ⇔ consequent (a ⇔ b).
 [📘](https://github.com/elmw/extra-boolean/wiki/eqv)
 
     -- eqv a b
@@ -163,7 +163,7 @@ eqv = eq
 
 
 {-|
-Check if antecedent ⇒ consequent (a ⇒ b).
+Checks if antecedent ⇒ consequent (a ⇒ b).
 [📘](https://github.com/elmw/extra-boolean/wiki/imp)
 
     -- imp a b
@@ -182,7 +182,7 @@ imp = imply
 
 -- AND (VARIABLE)
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -198,7 +198,7 @@ and = and2
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -215,7 +215,7 @@ and0 =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -232,7 +232,7 @@ and1 a =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -249,7 +249,7 @@ and2 a b =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -266,7 +266,7 @@ and3 a b c =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -283,7 +283,7 @@ and4 a b c d =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -300,7 +300,7 @@ and5 a b c d e =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -317,7 +317,7 @@ and6 a b c d e f =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -334,7 +334,7 @@ and7 a b c d e f g =
 
 
 {-|
-Check if all values are true.
+Checks if all values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/and)
 
     -- and[n] a b ...
@@ -354,7 +354,7 @@ and8 a b c d e f g h =
 
 -- OR (VARIABLE)
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -370,7 +370,7 @@ or = and2
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -387,7 +387,7 @@ or0 =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -404,7 +404,7 @@ or1 a =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -421,7 +421,7 @@ or2 a b =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -438,7 +438,7 @@ or3 a b c =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -455,7 +455,7 @@ or4 a b c d =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -472,7 +472,7 @@ or5 a b c d e =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -489,7 +489,7 @@ or6 a b c d e f =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -506,7 +506,7 @@ or7 a b c d e f g =
 
 
 {-|
-Check if any value is true.
+Checks if any value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/or)
 
     -- or[n] a b ...
@@ -526,7 +526,7 @@ or8 a b c d e f g h =
 
 -- XOR (VARIABLE)
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -542,7 +542,7 @@ xor = xor2
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -559,7 +559,7 @@ xor0 =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -576,7 +576,7 @@ xor1 a =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -592,7 +592,7 @@ xor2 = Basics.xor
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -609,7 +609,7 @@ xor3 a b c =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -626,7 +626,7 @@ xor4 a b c d =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -643,7 +643,7 @@ xor5 a b c d e =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -660,7 +660,7 @@ xor6 a b c d e f =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -677,7 +677,7 @@ xor7 a b c d e f g =
 
 
 {-|
-Check if odd no. of values are true.
+Checks if odd no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xor)
 
     -- xor[n] a b ...
@@ -697,7 +697,7 @@ xor8 a b c d e f g h =
 
 -- COUNT (VARIABLE)
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -713,7 +713,7 @@ count = count2
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -730,7 +730,7 @@ count0 =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -747,7 +747,7 @@ count1 a =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -764,7 +764,7 @@ count2 a b =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -781,7 +781,7 @@ count3 a b c =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -798,7 +798,7 @@ count4 a b c d =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -815,7 +815,7 @@ count5 a b c d e =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -832,7 +832,7 @@ count6 a b c d e f =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -849,7 +849,7 @@ count7 a b c d e f g =
 
 
 {-|
-Count no. of true values.
+Counts no. of true values.
 [📘](https://github.com/elmw/extra-boolean/wiki/count)
 
     -- count[n] a b ...
@@ -869,7 +869,7 @@ count8 a b c d e f g h =
 
 -- NAND (VARIABLE)
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -885,7 +885,7 @@ nand = nand2
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -902,7 +902,7 @@ nand0 =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -919,7 +919,7 @@ nand1 a =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -936,7 +936,7 @@ nand2 a b =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -953,7 +953,7 @@ nand3 a b c =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -970,7 +970,7 @@ nand4 a b c d =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -987,7 +987,7 @@ nand5 a b c d e =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -1004,7 +1004,7 @@ nand6 a b c d e f =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -1021,7 +1021,7 @@ nand7 a b c d e f g =
 
 
 {-|
-Check if any value is false.
+Checks if any value is false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nand)
 
     -- nand[n] a b ...
@@ -1041,7 +1041,7 @@ nand8 a b c d e f g h =
 
 -- NOR (VARIABLE)
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1057,7 +1057,7 @@ nor = nor2
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1074,7 +1074,7 @@ nor0 =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1091,7 +1091,7 @@ nor1 a =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1108,7 +1108,7 @@ nor2 a b =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1125,7 +1125,7 @@ nor3 a b c =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1142,7 +1142,7 @@ nor4 a b c d =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1159,7 +1159,7 @@ nor5 a b c d e =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1176,7 +1176,7 @@ nor6 a b c d e f =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1193,7 +1193,7 @@ nor7 a b c d e f g =
 
 
 {-|
-Check if all values are false.
+Checks if all values are false.
 [📘](https://github.com/elmw/extra-boolean/wiki/nor)
 
     -- nor[n] a b ...
@@ -1213,7 +1213,7 @@ nor8 a b c d e f g h =
 
 -- XNOR (VARIABLE)
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1229,7 +1229,7 @@ xnor = xnor2
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1246,7 +1246,7 @@ xnor0 =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1263,7 +1263,7 @@ xnor1 a =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1280,7 +1280,7 @@ xnor2 a b =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1297,7 +1297,7 @@ xnor3 a b c =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1314,7 +1314,7 @@ xnor4 a b c d =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1331,7 +1331,7 @@ xnor5 a b c d e =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1348,7 +1348,7 @@ xnor6 a b c d e f =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1365,7 +1365,7 @@ xnor7 a b c d e f g =
 
 
 {-|
-Check if even no. of values are true.
+Checks if even no. of values are true.
 [📘](https://github.com/elmw/extra-boolean/wiki/xnor)
 
     -- xnor[n] a b ...
@@ -1385,7 +1385,7 @@ xnor8 a b c d e f g h =
 
 -- SELECT (VARIABLE)
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1402,7 +1402,7 @@ select = select2
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1420,7 +1420,7 @@ select0 _ =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1440,7 +1440,7 @@ select1 i a =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1461,7 +1461,7 @@ select2 i a b =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1483,7 +1483,7 @@ select3 i a b c =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1506,7 +1506,7 @@ select4 i a b c d =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1530,7 +1530,7 @@ select5 i a b c d e =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1555,7 +1555,7 @@ select6 i a b c d e f =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
@@ -1581,7 +1581,7 @@ select7 i a b c d e f g =
 
 
 {-|
-Check if ith value is true.
+Checks if ith value is true.
 [📘](https://github.com/elmw/extra-boolean/wiki/select)
 
     -- select[n] i a b ...
