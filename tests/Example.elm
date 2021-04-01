@@ -17,17 +17,17 @@ parseTests =
     test "1.t1" <|
       \_ -> parse "truthy" |> equal True,
     test "1.t2" <|
-      \_ -> parse "not off" |> equal True,
+      \_ -> parse "Not Off" |> equal True,
     test "1.t3" <|
-      \_ -> parse "enabled" |> equal True,
+      \_ -> parse "Not Inactive" |> equal True,
     test "1.f0" <|
-      \_ -> parse "0" |> equal False,
+      \_ -> parse "cold" |> equal False,
     test "1.f1" <|
-      \_ -> parse "not true" |> equal False,
-    test "1.f2" <|
       \_ -> parse "inactive" |> equal False,
+    test "1.f2" <|
+      \_ -> parse "Negative Yes" |> equal False,
     test "1.f3" <|
-      \_ -> parse "disabled" |> equal False
+      \_ -> parse "Negative Aye" |> equal False
   ]
 
 

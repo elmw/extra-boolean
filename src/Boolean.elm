@@ -29,9 +29,11 @@ Boolean data type has two possible truth values to represent logic.\
 @docs select, select0, select1, select2, select3, select4, select5, select6, select7, select8
 -}
 
-import Regex exposing (Regex, fromStringWith, contains, find)
 import Maybe exposing (withDefault)
+import String exposing (toInt)
 import List exposing (length)
+import Regex exposing (Regex, fromStringWith, contains, find)
+
 
 
 
@@ -42,18 +44,35 @@ Converts string to boolean.
 
     -- parse s
     -- s: a string
-    parse "1"        == True
-    parse "truthy"   == True
-    parse "not off"  == True
-    parse "not true" == False
-    parse "inactive" == False
-    parse "disabled" == False
+    parse "1"            == True
+    parse "truthy"       == True
+    parse "Not Off"      == True
+    parse "Not Inactive" == True
+    parse "cold"         == False
+    parse "inactive"     == False
+    parse "Negative Yes" == False
+    parse "Negative Aye" == False
 -}
 parse : String -> Bool
 parse s =
-  let fal = contains (regex "(negati|never|refus|wrong|fal|off)|\\b(f|n|0)\\b") s
-      neg = modBy 2 (length (find (regex "\\b(nay|nah|no|dis|un|in)") s)) == 1 in
-  not (xor fal neg)
+  let t = contains rTru s
+      f = contains rFal s
+      n = modBy 2 (length (find rNeg s)) == 1 in
+  if contains rNum s
+    then (withDefault 0 (toInt "2")) > 0
+    else nimply f t == n
+
+rNum : Regex
+rNum = regex "^[-+]?\\d+$"
+
+rTru : Regex
+rTru = regex "\\b(?:t|y|1)\\b|\\b(?:\\+|ay|go|on|up)|(?:tru|acc|asc|day|for|hot|inc|joy|new|pos|top|win|yes|dawn|full|safe|grow|high|just|real|some|know|live|love|open|pure|shin|warm|wis[de]|activ|admit|advan|agree|begin|brigh|build|creat|early|enter|float|f(?:i|ou)nd|grant|light|north|prett|prese|publi|start|succe|victr)"
+
+rFal : Regex
+rFal = regex "\\b(?:f|n|0)\\b|(?:fal|off|dim|end|low|old|back|cold|cool|dark|dead|decr|desc|dirt|down|dull|dusk|exit|late|sink|ugly|absen|botto|close|finis|night|priva|south|wrong)"
+
+rNeg : Regex
+rNeg = regex "\\b(?:-|na|no|un|in|aft|bad|dis|lie|non|ben[dt]|den[iy]|empt|fail|fake|hate|los[es]|stop|decli|defea|destr|never|negat|refus|rejec|forget|shr[iu]nk|against|is.?nt|can.?(?:no)?t)|(?:hind)"
 
 regex : String -> Regex
 regex s =
